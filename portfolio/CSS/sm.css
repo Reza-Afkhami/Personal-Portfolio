@@ -1,0 +1,4 @@
+section .main-container .image img{
+    height: 50dvh !important;
+    max-height: 50dvh !important;
+}
