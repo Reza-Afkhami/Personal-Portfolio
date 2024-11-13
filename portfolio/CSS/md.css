@@ -7,6 +7,12 @@ nav .nav-container .logo{
 nav .nav-container .links{
     display: none;
 }
+nav .nav-container .dropdown{
+    display: block !important;
+}
+nav .nav-container .dropdown .links{
+    display: block;
+}
 .hamburger, .cancel{
     display: block !important;
     color: white;

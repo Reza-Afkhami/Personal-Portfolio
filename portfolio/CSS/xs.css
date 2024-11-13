@@ -1,0 +1,3 @@
+section .main-container .content .social-links a:last-child {
+    display: none;
+}

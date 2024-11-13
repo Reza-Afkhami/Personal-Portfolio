@@ -37,12 +37,13 @@ nav .nav-container .links a:hover{
     color: #077b32;
 }
 nav .nav-container .dropdown{
+    display: none;
     transform: translateY(-500px);
     width: 100%;
     height: auto;
     backdrop-filter: blur(4px) brightness(40%);
     box-shadow: 0 0 20px black;
-    transition: all .2s linear;
+    transition: all .4s linear;
 }
 nav .nav-container .dropdown .links a{
     display: flex;
