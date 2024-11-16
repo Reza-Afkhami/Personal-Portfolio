@@ -7,21 +7,22 @@
     <link rel="stylesheet" href="CSS/main.css">
     <link rel="stylesheet" href="CSS/fonts.css">
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Reza Portfolio</title>
   </head>
   <body class="bg-black w-full h-screen overflow-x-hidden">
     <nav class="w-full sticky ">
       <div class="nav-container w-full h-full flex justify-around items-center ">
-        <div class="logo text-white text-3xl font-bold">
+        <div class="logo text-white text-3xl font-bold" data-aos="zoom-in" data-aos-duration="1500">
           Reza <span>Afkhami</span>
         </div>
 
         <div class="links flex">
-          <div class="link"><a href="#">Home</a></div>
-          <div class="link"><a href="#">About</a></div>
-          <div class="link"><a href="#">Skills</a></div>
-          <div class="link"><a href="#">Services</a></div>
-          <div class="link"><a href="#">Contact</a></div>
+          <div class="link" data-aos="#" data-aos-duration="1500" data-aos-delay="100"><a href="index.html">Home</a></div>
+          <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="#">About</a></div>
+          <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#">Skills</a></div>
+          <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="#">Services</a></div>
+          <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="#">Contact</a></div>
         </div>
         <i class="fa-solid fa-bars hamburger" id="open_ham" onclick="hamburg()"></i>
         <div class="dropdown z-50 absolute top-0">
@@ -38,29 +39,216 @@
     </nav>
     <section>
       <div class="main-container">
-        <div class="image">
+        <div class="image" data-aos="zoom-out" data-aos-duration="3000" >
           <img src="images/greensuit_bg_black.jpg" alt="self-pict">
         </div>
         <div class="content text-white">
-          <h1 class="text-2xl">Hey I'm <span>Reza</span></h1>
-          <div class="typewriter">I am a
+          <h1 class="text-2xl" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">Hey I'm <span>Reza</span></h1>
+          <div class="typewriter" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="900">I am a
             <span class="typewriter-text"></span>|
-            <lable for=" "></lable>
           </div>
-          <p> a passionate web designer with a strong foundation in creating intuitive, visually engaging websites that captivate and serve users effectively. With a background in web design and freelance experience, I blend creativity with functionality to deliver sites that not only look good but work seamlessly. I also bring a growing expertise in artificial intelligence, incorporating AI-driven insights to enhance user experience and optimize website performance. Explore my portfolio to see how I craft digital experiences that combine design aesthetics with cutting-edge technology.</p>
+          <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100"> a passionate web designer with a strong foundation in creating intuitive, visually engaging websites that captivate and serve users effectively. With a background in web design and freelance experience, I blend creativity with functionality to deliver sites that not only look good but work seamlessly. I also bring a growing expertise in artificial intelligence, incorporating AI-driven insights to enhance user experience and optimize website performance. Explore my portfolio to see how I craft digital experiences that combine design aesthetics with cutting-edge technology.</p>
           <div class="social-links">
-            <a href="#"><i class="fa-brands fa-github"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="#"><i class="fa-brands fa-telegram"></i></a>
-            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300"><i class="fa-brands fa-github"></i></a>
+            <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1400"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500"><i class="fa-brands fa-telegram"></i></a>
+            <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1600"><i class="fa-brands fa-whatsapp"></i></a>
           </div>
-          <div class="btn">
+          <div class="btn" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1800">
             <button>Hire me</button>
           </div>
         </div>
       </div>
     </section>
+<!--    ABOUT SECTION STARTING HERE : -->
+    <section class="about" id="about">
+      <div class="content">
+        <div class="title"><span>About Me</span></div>
+        <div class="about-details">
+          <div class="left">
+            <img src="images/greensuit_bg_black.jpg" alt="pic-profile">
+          </div>
+          <div class="right">
+            <p class="about-text">I am <span>Reza</span> a versatile <span>web designer & developer</span> with a strong background in crafting user-friendly and visually engaging websites.  My journey began with a background in Occupational Health and Safety Engineering, where I developed strong problem-solving skills and attention to detail. Over time, I transitioned into the tech world, combining my creative vision with technical expertise to craft responsive, user-centered websites that help businesses thrive in the digital space.
+              Currently based in London, I am pursuing a <strong>master’s degree</strong> focused on <strong>AI technology</strong>, exploring cutting-edge innovations and how they can be applied to enhance web design and development. This unique combination of design skills and AI knowledge allows me to create future-ready solutions that are both functional and intelligent.
+              </p>
+            <div class="exp-area">
+              <p class="exp">
+                Speciality :
+                <span>Web designer & developer </span>
+              </p>
+              <p class="exp">
+                Address :
+                <span>London, UK </span>
+              </p>
+              <p class="exp">
+                Email :
+                <span>rezaafk021@gmail.com</span>
+              </p>
+              <p class="exp">
+                Phone :
+                <span>+44(UK) 7557898016 </span>
+              </p>
+              <p class="exp">
+                Freelance :
+                <span>Available </span>
+              </p>
+            </div>
+            <div class="button">
+              <a href="#">View All projects</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<!--    skills section : -->
+    <section class="skills" id="skills">
+      <div class="content">
+        <div class="title"><span>My Skills</span></div>
+        <div class="skills-detail">
+          <div class="text">
+            <div class="topic">Skills Reflects Our Knowledge</div>
+            <p>I specialize in web design and development, creating responsive, user-friendly websites that combine functionality with aesthetic appeal. Proficient in HTML, CSS, JavaScript, and Python, I bring technical expertise to every project. My experience extends to frameworks like React and tools such as WordPress, enabling me to deliver tailored solutions for diverse needs. Currently advancing my knowledge in AI technology as part of my master's studies, I explore ways to integrate AI-driven features into web projects, ensuring innovative and future-ready designs.
+            </p>
+            <div class="experience">
+              <div class="num">01</div>
+              <div class="exp">
+                Years of <br/>
+                Experience
+              </div>
+            </div>
+          </div>
+          <div class="boxes">
+            <div class="box">
+              <img src="images/html5-logo-image-logo-html-7-removebg-preview.png" alt="HTML5 logo">
+            </div>
+            <div class="box">
+              <img src="images/png-transparent-css-logo-removebg-preview.png" alt="CSS logo">
+            </div>
+            <div class="box">
+              <img src="images/JavaScript-Symbol.png" alt="JS logo">
+            </div>
+            <div class="box">
+              <img src="images/python-logo.png" alt="Python logo">
+            </div>
+            <div class="box">
+              <img src="images/png-transparent-react.png" alt="React logo">
+            </div>
+            <div class="box">
+              <img src="images/node-js-logo.png" alt="node js logo">
+            </div>
+            <div class="box">
+              <img src="images/logo_django.png" alt="django logo">
+            </div>
+            <div class="box">
+              <img src="images/typescript.png" alt="type script js logo">
+            </div>
+            <div class="box">
+              <img src="images/png-transparent-bootstrap-plain-wordmark-logo-icon.png" alt="bootstrap logo">
+            </div>
+            <div class="box">
+              <img src="images/png-transparent-tailwind-css-hd-logo.png" alt="tailwind logo">
+            </div>
+            <div class="box">
+              <img src="images/kisspng-sass.png" alt="SASS logo">
+            </div>
+            <div class="box">
+              <img src="images/pngtree-wordpress.jpg" alt="Wordpress logo">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<!--    my projects section : -->
+    <section class="my-projects" id="projects">
+      <div class="content">
+        <div class="title"><span>My Projects</span> <i class="fas fa-desktop"></i> </div>
+        <div class="cards">
+          <div class="card">
+            <div class="heading">Project Number1</div>
+            <div class="pict"><img src="" alt="P1"></div>
+          </div>
+          <div class="card">
+            <div class="heading">Project Number2</div>
+            <div class="pict"><img src="" alt="P2"></div>
+          </div>
+          <div class="card">
+            <div class="heading">Project Number3</div>
+            <div class="pict"><img src="" alt="P3"></div>
+          </div>
+          <div class="card">
+            <div class="heading">Project Number4</div>
+            <div class="pict"><img src="" alt="P4"></div>
+          </div>
+          <div class="card">
+            <div class="heading">Project Number5</div>
+            <div class="pict"><img src="" alt="P5"></div>
+          </div>
+          <div class="card">
+            <div class="heading">Project Number6</div>
+            <div class="pict"><img src="" alt="P6"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+<!--    contact me section : -->
+    <section class="contact" id="contact">
+      <div class="content">
+        <div class="title"><span>Contact Me</span></div>
+        <div class="text">
+          <div class="topic">Have Any Projects ? </div>
+          <p>Have any projects in mind or need help bringing your ideas to life? Let’s connect! Whether you’re looking to design a stunning website, develop a custom solution, or explore how AI can enhance your project, I’m here to help. Feel free to reach out via email or use the contact form below. I’d love to discuss your vision and collaborate to create something exceptional!</p>
+          <div class="contact-form-container">
+            <form class="contact-form" id="contact-form">
+              <input type="hidden" name="contact_number" value="697483">
+              <label for="name">Name</label>
+              <input type="text" name="user_name" id="name" placeholder="your full name" required>
+              <label for="email">Email</label>
+              <input type="email" name="user_email" id="email" placeholder="your email" required>
+              <label for="message">Message</label>
+              <textarea name="message" id="message" rows="5" placeholder="your message" required></textarea>
+              <input type="submit" value="Send" class="contact-btn">
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!--    footer section start : -->
+
 <!--    js files -->
+<!--    aos script -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+<!--    EmailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function() {
+        // https://dashboard.emailjs.com/admin/account
+        emailjs.init({
+          publicKey: "YOUR_PUBLIC_KEY",
+        });
+      })();
+    </script>
+    <script type="text/javascript">
+      window.onload = function() {
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+          event.preventDefault();
+          // these IDs from the previous steps
+          emailjs.sendForm('contact_service', 'contact_form', this)
+                  .then(() => {
+                    console.log('SUCCESS!');
+                  }, (error) => {
+                    console.log('FAILED...', error);
+                  });
+        });
+      }
+    </script>
+
+<!--    my main script : -->
     <script src="js/main.js"></script>
   </body>
 </html>

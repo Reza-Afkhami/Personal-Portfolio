@@ -100,14 +100,14 @@ section .main-container .content{
     min-height: 100px;
 }
 section .main-container .content h1{
-    font-size: clamp(1rem, 1rem + 5vw, 1.8rem);
+    font-size: clamp(1.5rem, 1.5rem + 5vw, 2.3rem);
 }
 section .main-container .content h1 span{
     color: #077b32;
     text-shadow: 0 0 10px #077b32;
 }
 section .main-container .content .typewriter{
-    font-size: clamp(1rem, 1rem + 5vw, 2.5rem);
+    font-size: clamp(1.5rem, 1.5rem + 5vw, 3rem);
 }
 section .main-container .content .typewriter .typewriter-text{
     color: #077b32;
@@ -115,8 +115,8 @@ section .main-container .content .typewriter .typewriter-text{
     font-weight: 600;
 }
 section .main-container .content p{
-    font-size: clamp(.4rem, .2rem + 9vw, 1rem);
-    margin: 10px 0;
+    font-size: clamp(.8rem, .4rem + 10vw, 1.2rem);
+    margin: 20px 0;
 }
 section .main-container .content .social-links i{
     display: inline-flex;
@@ -140,7 +140,7 @@ section .main-container .content .social-links i:hover{
 section .main-container .content button{
     width: 50%;
     height: 6vh;
-    margin: 15px;
+    margin:30px 15px;
     background-color: #077b32;
     color: white;
     border: none;
