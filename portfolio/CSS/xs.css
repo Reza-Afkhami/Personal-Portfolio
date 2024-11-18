@@ -1,3 +1,24 @@
 section .main-container .content .social-links a:last-child {
     display: none;
 }
+
+/*--------------------------About me section-------------------------------------*/
+.about .content .about-details{
+    gap: 25px !important;
+}
+.about .content .about-details .left img{
+    height: 180px !important;
+    width: 180px !important;
+}
+.about .content .about-details .right .about-text{
+    font-size: clamp(.5rem, .2rem + 10vw, 1rem) !important;
+}
+.about .content .about-details .right .exp-area{
+    margin-top: 15px;
+}
+.about .content .about-details .right .exp-area p{
+    font-size: clamp(.5rem, .2rem + 10vw, 1rem) !important;
+}
+.about .content .about-details .right .button a{
+    padding: 1px 3px !important;
+}
