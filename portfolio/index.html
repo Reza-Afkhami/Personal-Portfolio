@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="CSS/main.css">
     <link rel="stylesheet" href="CSS/fonts.css">
     <link rel="stylesheet" href="CSS/style.css">
@@ -21,7 +22,7 @@
           <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="index.html">Home</a></div>
           <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="#">About</a></div>
           <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#">Skills</a></div>
-          <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="#">Services</a></div>
+          <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="#">Projects</a></div>
           <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="#">Contact</a></div>
         </div>
         <i class="fa-solid fa-bars hamburger" id="open_ham" onclick="hamburg()"></i>
@@ -30,7 +31,7 @@
             <a href="#">Home</a>
             <a href="#">About</a>
             <a href="#">Skills</a>
-            <a href="#">Services</a>
+            <a href="#">Projects</a>
             <a href="#">Contact</a>
             <i class="fa-solid fa-xmark cancel" onclick="close_ham()"></i>
           </div>
@@ -103,7 +104,7 @@
         <div class="title"><span>My Skills</span></div>
         <div class="skills-detail">
           <div class="text">
-            <div class="topic">Skills Reflects Our Knowledge</div>
+            <div class="topic"><strong>Skills Reflects Our Knowledge</strong></div>
             <p>I specialize in web design and development, creating responsive, user-friendly websites that combine functionality with aesthetic appeal. Proficient in HTML, CSS, JavaScript, and Python, I bring technical expertise to every project. My experience extends to frameworks like React and tools such as WordPress, enabling me to deliver tailored solutions for diverse needs. Currently advancing my knowledge in AI technology as part of my master's studies, I explore ways to integrate AI-driven features into web projects, ensuring innovative and future-ready designs.
             </p>
             <div class="experience">
@@ -114,42 +115,71 @@
               </div>
             </div>
           </div>
-          <div class="boxes">
-            <div class="box">
-              <img src="images/html5-logo-image-logo-html-7-removebg-preview.png" alt="HTML5 logo">
-            </div>
-            <div class="box">
-              <img src="images/png-transparent-css-logo-removebg-preview.png" alt="CSS logo">
-            </div>
-            <div class="box">
-              <img src="images/JavaScript-Symbol.png" alt="JS logo">
-            </div>
-            <div class="box">
-              <img src="images/python-logo.png" alt="Python logo">
-            </div>
-            <div class="box">
-              <img src="images/png-transparent-react.png" alt="React logo">
-            </div>
-            <div class="box">
-              <img src="images/node-js-logo.png" alt="node js logo">
-            </div>
-            <div class="box">
-              <img src="images/logo_django.png" alt="django logo">
-            </div>
-            <div class="box">
-              <img src="images/typescript.png" alt="type script js logo">
-            </div>
-            <div class="box">
-              <img src="images/png-transparent-bootstrap-plain-wordmark-logo-icon.png" alt="bootstrap logo">
-            </div>
-            <div class="box">
-              <img src="images/png-transparent-tailwind-css-hd-logo.png" alt="tailwind logo">
-            </div>
-            <div class="box">
-              <img src="images/kisspng-sass.png" alt="SASS logo">
-            </div>
-            <div class="box">
-              <img src="images/pngtree-wordpress.jpg" alt="Wordpress logo">
+          <div class="skills_logos">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide" data-name="HTML">
+                  <div class="box">
+                  <img src="images/html5-logo-image-logo-html-7-removebg-preview.png" alt="HTML5 logo">
+                  </div>
+                </div>
+                <div class="swiper-slide" data-name="CSS">
+                  <div class="box">
+                    <img src="images/png-transparent-css-logo-removebg-preview.png" alt="CSS logo">
+                  </div>
+                </div>
+                <div class="swiper-slide" data-name="Java Script">
+                  <div class="box">
+                    <img src="images/JavaScript-Symbol.png" alt="JS logo">
+                  </div>
+                </div>
+                <div class="swiper-slide" data-name="Python">
+                  <div class="box">
+                  <img src="images/python-logo.png" alt="Python logo">
+                </div>
+                </div>
+                <div class="swiper-slide" data-name="React">
+                  <div class="box">
+                    <img src="images/png-transparent-react.png" alt="React logo">
+                  </div>
+                </div>
+                <div class="swiper-slide" data-name="Node Js">
+                  <div class="box">
+                    <img src="images/node-js-logo.png" alt="node js logo">
+                  </div>
+                </div>
+                <div class="swiper-slide" data-name="django">
+                  <div class="box">
+                  <img src="images/logo_django.png" alt="django logo">
+                </div>
+                </div>
+                <div class="swiper-slide" data-name="Type Script">
+                  <div class="box">
+                    <img src="images/typescript.png" alt="type script js logo">
+                  </div>
+                </div>
+                <div class="swiper-slide" data-name="Bootstrap">
+                  <div class="box">
+                    <img src="images/png-transparent-bootstrap-plain-wordmark-logo-icon.png" alt="bootstrap logo">
+                  </div>
+                </div>
+                <div class="swiper-slide" data-name="Tailwind">
+                  <div class="box">
+                    <img src="images/png-transparent-tailwind-css-hd-logo.png" alt="tailwind logo">
+                  </div>
+                </div>
+                <div class="swiper-slide" data-name="SASS">
+                  <div class="box">
+                    <img src="images/kisspng-sass.png" alt="SASS logo">
+                  </div>
+                </div>
+                <div class="swiper-slide" data-name="Wordpress">
+                  <div class="box">
+                    <img src="images/pngtree-wordpress.jpg" alt="Wordpress logo">
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
             </div>
           </div>
         </div>
@@ -159,32 +189,32 @@
     <section class="my-projects" id="projects">
       <div class="content">
         <div class="title"><span>My Projects</span> <i class="fas fa-desktop"></i> </div>
-        <div class="cards">
-          <div class="card">
-            <div class="heading">Project Number1</div>
-            <div class="pict"><img src="" alt="P1"></div>
-          </div>
-          <div class="card">
-            <div class="heading">Project Number2</div>
-            <div class="pict"><img src="" alt="P2"></div>
-          </div>
-          <div class="card">
-            <div class="heading">Project Number3</div>
-            <div class="pict"><img src="" alt="P3"></div>
-          </div>
-          <div class="card">
-            <div class="heading">Project Number4</div>
-            <div class="pict"><img src="" alt="P4"></div>
-          </div>
-          <div class="card">
-            <div class="heading">Project Number5</div>
-            <div class="pict"><img src="" alt="P5"></div>
-          </div>
-          <div class="card">
-            <div class="heading">Project Number6</div>
-            <div class="pict"><img src="" alt="P6"></div>
-          </div>
-        </div>
+<!--        <div class="cards">-->
+<!--          <div class="card">-->
+<!--            <div class="heading">Project Number1</div>-->
+<!--            <div class="pict"><img src="" alt="P1"></div>-->
+<!--          </div>-->
+<!--          <div class="card">-->
+<!--            <div class="heading">Project Number2</div>-->
+<!--            <div class="pict"><img src="" alt="P2"></div>-->
+<!--          </div>-->
+<!--          <div class="card">-->
+<!--            <div class="heading">Project Number3</div>-->
+<!--            <div class="pict"><img src="" alt="P3"></div>-->
+<!--          </div>-->
+<!--          <div class="card">-->
+<!--            <div class="heading">Project Number4</div>-->
+<!--            <div class="pict"><img src="" alt="P4"></div>-->
+<!--          </div>-->
+<!--          <div class="card">-->
+<!--            <div class="heading">Project Number5</div>-->
+<!--            <div class="pict"><img src="" alt="P5"></div>-->
+<!--          </div>-->
+<!--          <div class="card">-->
+<!--            <div class="heading">Project Number6</div>-->
+<!--            <div class="pict"><img src="" alt="P6"></div>-->
+<!--          </div>-->
+<!--        </div>-->
       </div>
     </section>
 <!--    contact me section : -->
@@ -217,12 +247,12 @@
       </div>
     </footer>
 <!--    js files -->
+    <script src="js/main.js"></script>
 <!--    aos script -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
-
 <!--    EmailJS -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script type="text/javascript">
@@ -247,8 +277,49 @@
         });
       }
     </script>
-
+    <!--  swiper js in my skills section-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      const swiper = new Swiper(".mySwiper", {
+        slidesPerView: 4,
+        grid: {
+          rows: 2,
+        },
+        spaceBetween: 30,
+        loop: true,
+        autoplay:{
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          374: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+          },
+          400: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+          },
+          640: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 5,
+            spaceBetween: 50,
+          },
+        },
+      });
+    </script>
 <!--    my main script : -->
-    <script src="js/main.js"></script>
   </body>
 </html>

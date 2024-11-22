@@ -1,6 +1,6 @@
 @import url(xl.css) screen and (max-width: 1400px);
 @import url(lg.css) screen and (max-width: 1200px);
-@import url(md.css) screen and (max-width: 884px);
+@import url(md.css) screen and (max-width: 885px);
 @import url(sm.css) screen and (max-width: 768px);
 @import url(xs.css) screen and (max-width: 576px);
 
@@ -193,21 +193,22 @@ section .main-container .content button:hover{
     margin: 0 auto;
     font-family: "Poppins", sans-serif;
 }
-.about .content .title{
+.title{
     width: 100%;
+    height: 55px;
     display: flex;
     justify-content: center;
     margin-bottom: 40px;
 }
-.about .content .title span{
+.title span{
     color: white;
     font-size: 30px;
     font-weight: 600;
     position: relative;
     padding-bottom: 8px;
 }
-.about .content .title span::before,
-.about .content .title span::after{
+.title span::before,
+.title span::after{
     content: "";
     position: absolute;
     height: 3px;
@@ -216,12 +217,13 @@ section .main-container .content button:hover{
     left: 0;
     bottom: 0;
 }
-.about .content .title span::after{
+.title span::after{
     width: 70%;
     bottom: -7px;
     left: 50%;
     transform: translateX(-50%);
 }
+
 .about .content .about-details{
     width: 100%;
     min-height:calc(90dvh - 13px) ;
@@ -293,6 +295,109 @@ section .main-container .content button:hover{
     border: #077b32;
     background-color: white;
     color: #077b32;
+}
+/*----------------------------------skills-------------------------------------------*/
+.skills{
+    width: 100%;
+    height:100dvh;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+.skills .content{
+    width: 100%;
+    height: 100%;
+}
+.skills .content .skills-detail{
+    width: 80%;
+    height: calc(100% - 95px);
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.skills .content .skills-detail .text{
+    width: 49%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: start;
+}
+.skills .content .skills-detail .text .topic{
+    color: white;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+.skills .content .skills-detail .text p{
+    color: white;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+.skills .content .skills-detail .text .experience{
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+}
+.skills .content .skills-detail .text .experience .num{
+    color: white;
+    font-size: 80px;
+}
+.skills .content .skills-detail .text .experience .exp{
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 6px 0 20px;
+}
+.skills .content .skills-detail .skills_logos{
+    width: 49%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+/*swiper check*/
+.skills .content .skills-detail .skills_logos .swiper {
+    width: 100%;
+    height: 50%;
+    border: 2px solid #077b32;
+    box-shadow: 6px 6px 14px #077b32;
+    border-radius: 10px;
+    margin: 0 auto;
+    padding: 10px 10px;
+}
+
+.skills .content .skills-detail .skills_logos .swiper .swiper-pagination .swiper-pagination-bullet{
+    width: 5px;
+    height: 5px;
+    background-color: white;
+    cursor: pointer;
+}
+.skills .content .skills-detail .skills_logos .swiper .swiper-pagination .swiper-pagination-bullet-active{
+    height: 6px;
+    width: 12px;
+    background-color: #077b32;
+}
+.skills .content .skills-detail .skills_logos .swiper-slide {
+    text-align: center;
+    height: calc((100% - 50px) / 2) !important;
+    width: 120px !important;
+    /* Center slide text vertically */
+}
+.skills .content .skills-detail .skills_logos .swiper-slide .box{
+    width: 100%;
+    height:100%;
+    cursor: context-menu;
+}
+.skills .content .skills-detail .skills_logos .swiper-slide .box img{
+    width: 100%;
+    height: 100%;
+    border: 1px white solid;
+    outline: 2px solid #077b32;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+    border-radius: 20px;
 }
 /*-----------------------animation---------------------------------------*/
 @keyframes animate {

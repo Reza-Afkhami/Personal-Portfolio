@@ -36,7 +36,7 @@ section .main-container .image img{
     max-height: 50dvh !important;
 }
 section .main-container .content{
-    width: 80% !important;
+    width: 90% !important;
 }
 section .main-container .content .social-links i{
     width: 2.5rem !important;
@@ -44,6 +44,9 @@ section .main-container .content .social-links i{
     font-size: 1.5rem !important;
 }
 /*----------------------------About me section------------------------ */
+.about .content{
+    width: 90% !important;
+}
 .about .content .about-details{
     flex-flow: column nowrap;
     justify-content: start !important;
@@ -77,4 +80,37 @@ section .main-container .content .social-links i{
 }
 .about .content .about-details .right .button a{
     padding: 7px 20px !important;
+}
+/*skills section */
+.skills .content .skills-detail{
+    width: 90% !important;
+    height:auto  !important;
+    flex-flow: column nowrap !important;
+}
+.skills .content .skills-detail .text{
+    width: 100% !important;
+}
+.skills .content .skills-detail .skills_logos{
+    width: 100% !important;
+}
+.skills .content .skills-detail .skills_logos .swiper {
+    height: 500px !important;
+    padding: 10px !important;
+    margin-top: 150px !important;
+}
+.skills .content .skills-detail .skills_logos .swiper .swiper-pagination {
+    height: 18px;
+}
+.skills .content .skills-detail .skills_logos .swiper-slide {
+    text-align: center;
+    height: calc((100% - 80px) / 2) !important;
+    width: 150px !important;display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Center slide text vertically */
+}
+.skills .content .skills-detail .skills_logos .swiper-slide .box{
+    width: 80% !important;
+    height:80% !important;
+    cursor: context-menu;
 }
