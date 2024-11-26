@@ -188,10 +188,18 @@ section .main-container .content .social-links i:hover{
     color: black;
     filter: drop-shadow(0 0 10px #077b32);
 }
-section .main-container .content button{
+section .main-container .content .btn{
     width: 50%;
-    height: 6vh;
     margin:30px 15px;
+    border-radius: 5px;
+}
+section .main-container .content .btn>a{
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 40px;
     background-color: #077b32;
     color: white;
     border: none;
@@ -201,7 +209,7 @@ section .main-container .content button{
     border-radius: 5px;
     transition: .2s linear;
 }
-section .main-container .content button:hover{
+section .main-container .content .btn>a:hover{
     scale: 1.1;
     color: #077b32;
     border: 2px solid #077b32;

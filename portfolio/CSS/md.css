@@ -43,6 +43,10 @@ section .main-container .content .social-links i{
     height: 2.5rem !important;
     font-size: 1.5rem !important;
 }
+section .main-container .content .btn>a{
+    width: 50% !important;
+    padding: 5px 20px !important;
+}
 /*----------------------------About me section------------------------ */
 .about .content{
     width: 90% !important;

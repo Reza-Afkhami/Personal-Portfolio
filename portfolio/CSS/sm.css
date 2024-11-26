@@ -2,6 +2,12 @@ section .main-container .image img{
     height: 50dvh !important;
     max-height: 50dvh !important;
 }
+.scroll-to-top {
+    width: 25px !important;
+    height: 25px !important;
+    bottom: 5px !important;
+    left: 2px !important;
+}
 /*skills section */
 .skills .content .skills-detail .skills_logos{
     height: 280px !important;

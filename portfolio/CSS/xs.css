@@ -1,7 +1,10 @@
 section .main-container .content .social-links a:last-child {
     display: none;
 }
-
+section .main-container .content .btn>a{
+    width: 70% !important;
+    padding: 0 20px !important;
+}
 /*--------------------------About me section-------------------------------------*/
 .about{
     margin-top: 20px;
