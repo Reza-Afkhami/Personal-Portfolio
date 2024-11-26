@@ -43,4 +43,22 @@ function eraseText() {
 }
 window.addEventListener("load", typeWriter);
 
-// tooltip in Skill section
+// Get the button
+const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+// Show or hide the button when scrolling
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+        scrollToTopBtn.classList.add("active"); // Show button
+    } else {
+        scrollToTopBtn.classList.remove("active"); // Hide button
+    }
+});
+
+// Scroll to the top when the button is clicked
+scrollToTopBtn.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth", // Smooth scrolling animation
+    });
+});

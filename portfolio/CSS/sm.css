@@ -16,3 +16,12 @@ section .main-container .image img{
     height:95% !important;
     cursor: context-menu;
 }
+
+/*-----------------------------------   Projects -------------------------------------------*/
+.my-projects .content .cards{
+    gap: 20px 50px !important;
+}
+/*-------------------------------   Contact Us ---- ---------------------------------------*/
+.contact .content .text .contact-form-container{
+    padding: 10px !important;
+}

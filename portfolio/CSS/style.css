@@ -25,6 +25,7 @@
 
 nav{
     height: 10vh;
+    position: sticky;
 }
 nav .nav-container .logo span{
     color: #077b32;
@@ -77,6 +78,34 @@ nav .nav-container .dropdown .links a{
 }
 nav .nav-container .dropdown .links a:hover{
     background-color: #077b32;
+}
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #077b32;
+    color: white;
+    border: none;
+    outline:2px solid white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease, visibility 0.3s ease;
+    z-index: 1000;
+}
+.scroll-to-top:hover {
+    background-color: #03451b;
+}
+.scroll-to-top.active {
+    opacity: 1;
+    visibility: visible;
 }
 .hamburger, .cancel{
     cursor: pointer;
@@ -416,6 +445,7 @@ section .main-container .content button:hover{
     font-size: 24px;
     display: flex;
     align-items: center;
+
 }
 .my-projects .content .cards{
     width: 80%;
@@ -432,7 +462,7 @@ section .main-container .content button:hover{
     flex-flow: column nowrap;
     border: 2px solid #077b32;
     border-radius: 17px;
-    background: #fff;
+    background: #484848;
     box-shadow:  -5px -5px 10px rgba(255, 255, 255, 0.19),
     5px 5px 10px #077b32;
 }
@@ -451,10 +481,13 @@ section .main-container .content button:hover{
     width: 100%;
     display: flex;
     flex-flow: column nowrap;
+    border-top: 2px solid #c3c3c3;
+    padding-bottom: 20px;
+    color: white;
 }
 .my-projects .content .cards .card .info h1{
     width: 100%;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     font-style: italic;
     color: #077b32;
@@ -464,11 +497,120 @@ section .main-container .content button:hover{
 }
 .my-projects .content .cards .card .info .description{
     width: 100%;
-    padding: 10px 5px;
+    font-size: 1rem;
+    padding: 10px;
     text-align: justify;
     font-weight: 500;
 }
-/*-----------------------animation---------------------------------------*/
+
+/*-------------------------------------- Contact me section : -------------------------------------*/
+.contact {
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+}
+.contact .content{
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+.contact .content .text{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    color: white;
+}
+.contact .content .text .topic{
+    color: #077b32;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.contact .content .text p{
+    padding: 20px 0;
+}
+.contact .content .text p>a{
+    text-decoration: underline;
+    color: #077b32;
+    font-weight: bolder;
+}
+.contact .content .text .contact-form-container{
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+}
+.contact .content .text .contact-form-container .contact-form{
+    /*background-color: transparent;*/
+    padding: 30px;
+    background: linear-gradient(315deg, #cacaca, #f0f0f0);
+    box-shadow:  -4px -4px 8px #bebebe,
+    4px 4px 8px #077b32;
+    border-radius: 8px;
+}
+.contact .content .text .contact-form-container .contact-form h2{
+    margin-bottom: 15px;
+    font-size: 2rem;
+    text-align: center;
+    color: #077b32;
+}
+.contact .content .text .contact-form-container .contact-form label{
+    display: block;
+    color: #077b32;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+.contact .content .text .contact-form-container .contact-form input, .contact .content .text .contact-form-container .contact-form textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: black;
+}
+.contact .content .text .contact-form-container .contact-form input:focus, .contact .content .text .contact-form-container .contact-form textarea:focus{
+    border:2px solid #077b32;
+    outline: none;
+}
+.contact .content .text .contact-form-container .contact-form input[type=submit]{
+    width: auto;
+    padding: 10px 45px;
+    background-color: #077b32;
+    font-size: 1.1rem;
+    color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background-color .3s linear;
+}
+.contact .content .text .contact-form-container .contact-form input[type=submit]:hover{
+    background-color: #065423;
+}
+
+/*--------------------------    footer  -----------------------------*/
+footer{
+    background: #077b32;
+    padding: 15px 0;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+}
+footer .text{
+    font-size: 1rem;
+    color: white;
+    font-weight: 400;
+}
+footer .text span a{
+    color: white;
+    font-weight: 500;
+}
+footer .text span a:hover{
+    text-decoration: underline;
+}
+/*----------------------------animation---------------------------------------*/
 @keyframes animate {
     0%{
         scale: 1;

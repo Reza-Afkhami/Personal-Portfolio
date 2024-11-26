@@ -114,3 +114,18 @@ section .main-container .content .social-links i{
     height:80% !important;
     cursor: context-menu;
 }
+
+/*-----------------------------   Projects ---------------------------------------*/
+.my-projects .content .cards{
+    padding-top: 20px !important;
+    grid-template-columns: repeat(2,minmax(200px, 1fr)) !important;
+    gap: 40px 90px !important;
+}
+
+/*-------------------------------Contact Me ---------------------------------------*/
+.contact .content{
+    width: 90% !important;
+}
+.contact .content .text {
+    width: 100% !important;
+}

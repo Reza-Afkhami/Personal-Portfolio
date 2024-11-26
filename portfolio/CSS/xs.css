@@ -46,3 +46,24 @@ section .main-container .content .social-links a:last-child {
     width: 90% !important;
     height:110% !important;
 }
+
+/*-----------------------------   Projects ---------------------------------------*/
+.my-projects .content .cards{
+    grid-template-columns: repeat(1,minmax(200px, 1fr)) !important;
+    row-gap: 50px !important;
+}
+/*-----------------------------    Contact Us     ---------------------------------------*/
+.contact .content .text .topic{
+    font-size: 1.3rem !important;
+    font-weight: 500 !important;
+}
+.contact .content .text p{
+    font-size: .9rem;
+    padding: 10px 0 !important;
+}
+.contact .content .text .contact-form-container .contact-form{
+    padding: 5px !important;
+}
+.contact .content .text .contact-form-container .contact-form input[type=submit]{
+    font-size: 1rem !important;
+}

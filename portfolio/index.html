@@ -12,7 +12,7 @@
     <title>Reza Portfolio</title>
   </head>
   <body class="bg-black w-full h-screen overflow-x-hidden">
-    <nav class="w-full sticky ">
+    <nav class="w-full ">
       <div class="nav-container w-full h-full flex justify-around items-center ">
         <div class="logo text-white text-3xl font-bold" data-aos="zoom-in" data-aos-duration="1500">
           Reza <span>Afkhami</span>
@@ -20,10 +20,10 @@
 
         <div class="links flex">
           <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="index.html">Home</a></div>
-          <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="#">About</a></div>
-          <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#">Skills</a></div>
-          <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="#">Projects</a></div>
-          <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="#">Contact</a></div>
+          <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="#about">About</a></div>
+          <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#skills">Skills</a></div>
+          <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="#projects">Projects</a></div>
+          <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="#contact">Contact</a></div>
         </div>
         <i class="fa-solid fa-bars hamburger" id="open_ham" onclick="hamburg()"></i>
         <div class="dropdown z-50 absolute top-0">
@@ -38,6 +38,7 @@
         </div>
       </div>
     </nav>
+    <button id="scrollToTopBtn" class="scroll-to-top">↑</button>
     <section>
       <div class="main-container">
         <div class="image" data-aos="zoom-out" data-aos-duration="3000" >
@@ -73,16 +74,16 @@
             <p class="about-text" data-aos="zoom-in-down" data-aos-duration="2500" data-aos-delay="800" data-aos-easing="">I am <strong>Reza,</strong> a versatile <strong>web designer & developer</strong> with a strong background in crafting user-friendly and visually engaging websites.  My journey began with a background in Occupational Health and Safety Engineering, where I developed strong problem-solving skills and attention to detail. Over time, I transitioned into the tech world, combining my creative vision with technical expertise to craft responsive, user-centered websites that help businesses thrive in the digital space.
               Currently based in London, I am pursuing a <strong>master’s degree</strong> focused on <strong>AI technology</strong>, exploring cutting-edge innovations and how they can be applied to enhance web design and development. This unique combination of design skills and AI knowledge allows me to create future-ready solutions that are both functional and intelligent.
             </p>
-            <div class="exp-area" data-aos="fade-up-left" data-aos-duration="2500" data-aos-delay="1000">
+            <div class="exp-area">
               <p class="exp">
                 Speciality :
                 <span>Web designer & developer </span>
               </p>
-              <p class="exp" data-aos="fade-up-left" data-aos-duration="2500" data-aos-delay="1100">
+              <p class="exp">
                 Address :
                 <span>London, UK </span>
               </p>
-              <p class="exp" data-aos="fade-up-left" data-aos-duration="2500" data-aos-delay="1200">
+              <p class="exp">
                 Email :
                 <span>rezaafk021@gmail.com</span>
               </p>
@@ -116,7 +117,7 @@
             </div>
           </div>
           <div class="skills_logos">
-            <div class="swiper mySwiper" data-aos="fade-left" data-aos-duration="3000">
+            <div class="swiper mySwiper">
               <div class="swiper-wrapper">
                 <div class="swiper-slide" data-name="HTML">
                   <div class="box">
@@ -288,15 +289,18 @@
         <div class="title"><span>Contact Me</span></div>
         <div class="text">
           <div class="topic">Have Any Projects ? </div>
-          <p>Have any projects in mind or need help bringing your ideas to life? Let’s connect! Whether you’re looking to design a stunning website, develop a custom solution, or explore how AI can enhance your project, I’m here to help. Feel free to reach out via email or use the contact form below. I’d love to discuss your vision and collaborate to create something exceptional!</p>
+          <p>Have any projects in mind or need help bringing your ideas to life? Let’s connect! Whether you’re looking to design a stunning website, develop a custom solution, or explore how AI can enhance your project, I’m here to help. Feel free to reach out via email <a href="mailto:rezaafk021@gmail.com">{rezaafk021@gmail.com}</a> or text to
+            <a href="tel:+1234567890">{+447557898016}</a> or use the contact form below. I’d love to discuss your vision and collaborate to create something exceptional!</p>
           <div class="contact-form-container">
             <form class="contact-form" id="contact-form">
               <input type="hidden" name="contact_number" value="697483">
-              <label for="name">Name</label>
+              <label for="name">Name: </label>
               <input type="text" name="user_name" id="name" placeholder="your full name" required>
-              <label for="email">Email</label>
+              <label for="phone">Phone Number:</label>
+              <input type="tel" id="phone" name="phone" pattern="[+]{1}[0-9]{11,14}" placeholder="+447557898016" required>
+              <label for="email">Email: </label>
               <input type="email" name="user_email" id="email" placeholder="your email" required>
-              <label for="message">Message</label>
+              <label for="message">Message: </label>
               <textarea name="message" id="message" rows="5" placeholder="your message" required></textarea>
               <input type="submit" value="Send" class="contact-btn">
             </form>
@@ -308,7 +312,7 @@
 <!--    footer section start : -->
     <footer>
       <div class="text">
-        <span>Created By <a href="#">Reza Afkhami</a>| &#169; 2024 All Rights Reserved</span>
+        <span>Created By <a href="#">Reza Afkhami</a> | &#169; 2024 All Rights Reserved</span>
       </div>
     </footer>
 <!--    js files -->

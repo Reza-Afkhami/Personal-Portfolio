@@ -3,3 +3,7 @@ section .main-container .image{
     height: 45dvh !important;
     max-height: 50dvh !important;
 }
+/*--------------------my projects--------------------------------------*/
+.my-projects .content .cards{
+    width: 90% !important;
+}
