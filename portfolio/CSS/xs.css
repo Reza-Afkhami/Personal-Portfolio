@@ -2,8 +2,8 @@ section .main-container .content .social-links a:last-child {
     display: none;
 }
 section .main-container .content .btn>a{
-    width: 70% !important;
-    padding: 0 20px !important;
+    width: 100% !important;
+    padding: 15px 25px !important;
 }
 /*--------------------------About me section-------------------------------------*/
 .about{
@@ -37,8 +37,16 @@ section .main-container .content .btn>a{
 }
 .skills .content .skills-detail .skills_logos .swiper {
     height: 190px !important;
-    padding: 5px !important;
     margin-top: -50px !important;
+}
+.skills .content .skills-detail .skills_logos .swiper-slide {
+    text-align: center;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    height: auto !important;
+    width: 200px !important;
+    /* Center slide text vertically */
 }
 .skills .content .skills-detail .skills_logos .swiper-slide .box{
     width: 100% !important;
@@ -47,7 +55,7 @@ section .main-container .content .btn>a{
 }
 .skills .content .skills-detail .skills_logos .swiper-slide .box img{
     width: 90% !important;
-    height:110% !important;
+    height:100% !important;
 }
 
 /*-----------------------------   Projects ---------------------------------------*/

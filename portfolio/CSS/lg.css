@@ -3,6 +3,18 @@ section .main-container .image{
     height: 45dvh !important;
     max-height: 50dvh !important;
 }
+/*----------------------    skills   ---------------------------------------------*/
+/*.skills{*/
+/*   height: auto !important;*/
+/*}*/
+/*.skills .content{*/
+/*    width: 100%;*/
+/*    height: auto !important;*/
+/*}*/
+/*.skills .content .skills-detail{*/
+/*    height: auto !important;*/
+/*}*/
+
 /*--------------------my projects--------------------------------------*/
 .my-projects .content .cards{
     width: 90% !important;

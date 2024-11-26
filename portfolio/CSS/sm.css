@@ -13,7 +13,7 @@ section .main-container .image img{
     height: 280px !important;
 }
 .skills .content .skills-detail .skills_logos .swiper {
-    height: 300px !important;
+    height: 200px !important;
     padding: 5px !important;
     margin-top: 130px !important;
 }

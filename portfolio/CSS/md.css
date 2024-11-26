@@ -44,8 +44,9 @@ section .main-container .content .social-links i{
     font-size: 1.5rem !important;
 }
 section .main-container .content .btn>a{
-    width: 50% !important;
-    padding: 5px 20px !important;
+    width: 60% !important;
+    padding: 10px 20px !important;
+    font-size: 18px !important;
 }
 /*----------------------------About me section------------------------ */
 .about .content{
@@ -98,9 +99,9 @@ section .main-container .content .btn>a{
     width: 100% !important;
 }
 .skills .content .skills-detail .skills_logos .swiper {
-    height: 500px !important;
+    height: 300px !important;
     padding: 10px !important;
-    margin-top: 150px !important;
+    margin-top: 10px !important;
 }
 .skills .content .skills-detail .skills_logos .swiper .swiper-pagination {
     height: 18px;
@@ -108,9 +109,7 @@ section .main-container .content .btn>a{
 .skills .content .skills-detail .skills_logos .swiper-slide {
     text-align: center;
     height: calc((100% - 80px) / 2) !important;
-    width: 150px !important;display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 150px !important;
     /* Center slide text vertically */
 }
 .skills .content .skills-detail .skills_logos .swiper-slide .box{
