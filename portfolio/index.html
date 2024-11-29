@@ -308,7 +308,6 @@
         </div>
       </div>
     </section>
-
 <!--    footer section start : -->
     <footer>
       <div class="text">
@@ -316,7 +315,8 @@
       </div>
     </footer>
 <!--    js files -->
-    <script src="js/main.js"></script>
+    <script src="public/js/main.js"></script>
+
 <!--    aos script -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
@@ -342,10 +342,10 @@
           // these IDs from the previous steps
           emailjs.sendForm('service_xo2grrr', 'template_xo9g3ub', this)
                   .then(() => {
-                    btn.value = 'Sending...';
+                    btn.value = 'Send';
                     console.log('SUCCESS!');
                   }, (error) => {
-                    btn.value = 'Sending...';
+                    btn.value = 'Send';
                     console.log('FAILED...', error);
                   });
         });
